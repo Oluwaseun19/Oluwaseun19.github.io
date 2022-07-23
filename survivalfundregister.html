@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survivalfundregister</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta2-web/css/all.css">
+    <link rel="icon" type="image/gif" href="imgs/animated_favicon1.gif">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #218C74;
+        }
+        li a {
+            color: white;
+        }
+        li a:hover {
+            color: rgb(180, 178, 178);
+        }
+        .header {
+            background-image: linear-gradient(to right, #0e725c, #218C74);
+            padding: 20px 0px;
+            height: 80px;
+        }
+        #seun {
+            margin-top: -3%;
+            margin-left: inherit;
+        }
+        #seun ul {
+            margin-left: 13%;
+        }
+        #seun ul li a {
+            color: white;
+            margin-right: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 500ms ease-in-out;
+        }
+        #seun ul li a:hover {
+            color: rgb(204, 197, 197);
+        }
+        .navbar-brand img {
+            margin-left: 4%;
+        }
+        .navbar-expand-lg {
+            margin-left: 5%;
+        }
+        i.fa-bars {
+            position: absolute;
+            top: 4%;
+            right: 10%;
+            color: white;
+            font-size: 25px;
+            display: none;
+        }
+        .canvas-list li {
+            list-style-type: none;
+            color: white;
+            margin: 0px 0px 30px 0px;
+            cursor: pointer;
+        }
+        .canvas-list li a {
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            margin: 0px 0px 30px 0px;
+            cursor: pointer;
+        }
+        .canvas-list li a:hover {
+            color: rgb(202, 200, 200);
+            transition: color 500ms ease-in-out;
+        }
+        @media screen and (max-width: 990px){
+            i.fa-bars {
+                display: block;
+            }
+        }
+        .content {
+            margin: 100px 0px 50px 0px;
+        }
+        .content .row .card {
+            background: rgb(230, 229, 229);
+            height: 390px;
+            margin: 0px 0px 20px 0px;
+            padding: 30px;
+            box-shadow: 0px 0px 3px inset;
+            border: none;
+        }
+        .content .row .card button {
+            position: relative;
+            top: 30px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(196, 186, 186);
+        }
+        .card-header {
+            margin: 0px 0px 30px 0px;
+            background: white;
+        }
+        .card-header h3 {
+            color: #218C74;
+        }
+        .row .card h4 {
+            color: rgb(66, 64, 64);
+        }
+        .row .card p {
+            color: grey;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar-expand-lg">
+            <a class="navbar-brand" href="survivalfundfaq.html">
+                <img src="imgs/sirvivalfunds logo.png" height="30px" width="195px"/>
+            </a>
+            <i class="fa fa-bars fa-2x" data-bs-toggle="offcanvas" data-bs-target="#offcanvastoggle" role="button"></i>
+            <div class="collapse navbar-collapse" id="seun">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="operaniyi.html">Operaniyi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="valuemaxpage.html">Valuemaxpage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="survivalfundfaq.html">Survivalfundfaq</a></li>
+                    <li class="nav-item"><a class="nav-link" href="survivalfundhome.html">Survivalfundhome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="survivalfundregister.html">Survivalfundregister</a></li>
+                    <li class="nav-item"><a class="nav-link" href="simplifiedcredit.html">Simplifiedcredit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="necopage.html">Necopage</a></li>
+                </ul>
+                <img src="imgs/industry-logo.395ef1e7.png" height="30px" width="160px"/>
+            </div>
+        </div>
+        <div id="offcanvastoggle" class="offcanvas offcanvas-end" tabindex="-1">
+            <div class="offcanvas-header" style="background: #218C74;">
+                <img src="imgs/sirvivalfunds logo.png" height="35px" width="260px"/>
+                <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body" style="background: #218C74;">
+                <ul class="canvas-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="operaniyi.html">Operaniyi</a></li>
+                    <li><a href="valuemaxpage.html">Valuemaxpage</a></li>
+                    <li><a href="survivalfundfaq.html">Survivalfundfaq</a></li>
+                    <li><a href="survivalfundhome.html">Survivalfundhome</a></li>
+                    <li><a href="survivalfundregister.html">Survivalfundregister</a></li>
+                    <li><a href="simplifiedcredit.html">Simplifiedcredit</a></li>
+                    <li><a href="necopage.html">Necopage</a></li>
+                </ul> 
+                <img src="imgs/industry-logo.395ef1e7.png" height="30px" width="165px" alt="FMITI logo">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="card" style="padding: 20px 5px; height: cover;">
+                <div class="card-header">
+                    <h3>Select your Registeration Type</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <h4>MSME Payroll Support</h4>
+                                <p>
+                                    The MSME Payroll Support Scheme is a survival fund that will make payroll support available to save jobs and sustain local production.
+                                </p>
+                                <button type="button" class="btn" style="margin-top: 45px;">Payroll Support Register</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <h4>MSME Grant</h4>
+                                <p>
+                                    The credit support to MSMEs and priority sectors will provide affordable finance to key sectors impacted by the pandemic and enable an increase in manufacturing capacity in priority sectors.
+                                </p>
+                                <button type="button" class="btn">MSME Grant Register</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <h4>Guaranteed Offtake Scheme</h4>
+                                <p>
+                                    The MSME Guaranteed Offtake Scheme is one of the Federal Government's economic support measures to assist micro and small businesses affected by the pandemic.
+                                </p>
+                                <button type="button" class="btn">Guaranteed Offtake Scheme Register</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card" style="background: white;">
+                                <h4>Formalisation Support</h4>
+                                <p>
+                                    The registration of 250,000 New Business Names with CAC. The Federal Government will be providing free CAC business name registration for 250,000 businesses.
+                                </p>
+                                <button type="button" class="btn" style="color: white; background: #218C74;;">Formalisation Support</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span><span style="color: red;">Caveat:</span> This site is a student project made for practise purposes only and is not meant to be a clone of the original site.<i class="fa fa-smile-o" style="color: red;"></i></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+.header {
+    background-color: rgb(9, 23, 65);
+    padding: 50px;
+}
+button {
+    color: orange;
+    margin-top: -10%;
+    margin-left: 90%;
+    background-color: transparent;
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
+button:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+#head {
+    margin-left: 25%;
+    margin-top: -3%;
+}
+.header p {
+    color: white;
+    margin-left: 85%;
+    display: inline;
+    border-left: 5px solid white;
+    border-radius: 5px;
+    transition: box-shadow,border 500ms ease-in-out;
+}
+#head p:hover {
+    color: orange;
+    display: inline;
+    border: 2px solid orange;
+    box-shadow: 0px 0px 30px orange;
+}
+#head li a {
+    color: white;
+    padding-bottom: 10px;
+    width: fit-content;
+    cursor: pointer;
+    font-size: small;
+    font-weight: 600;
+    margin: 0px 5px;
+    transition: border,color,padding 300ms linear;
+    border-bottom: 0px solid orange;
+    
+}
+#head li a:hover {
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgb(255, 166, 0);
+}
+.header2 {
+    padding: 10px;
+    background-image:linear-gradient(to right,rgb(9, 23, 65),#192242b4,#2d428f83);
+}
+.header2 a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 1s ease-in-out;
+}
+.header2 a:hover {
+    color: orange;
+}
+.content {
+    padding: 100px 40px;
+    background-color: white;
+}
+.advert1 {
+    padding: 10px;
+    margin: 0px 0px 70px 0px;
+}
+.content h2 {
+    color: grey;
+    padding: 5px;
+}
+.advert2 {
+    padding: 40px 0px 0px 35px;
+}
+.text {
+    padding: 0px 10px;
+}
+.text h3 {
+    color: #8A9400;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.text p {
+    color: grey;
+}
+.content span {
+    color: #5B514F;
+    font-size: 40px;
+    position: relative;
+    font-family: cursive;
+    margin-left: -9%;
+    margin-top: -6%;
+
+}
+h3 span {
+    padding-right: 20px;
+}
+div[class~=range] {
+    padding: 50px;
+}
+.collapseheader {
+    background-color: navy;
+    width: 100%;
+}
+.operation {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 30px 30px 50px 30px;
+    background-color: #182141;
+}
+.operation h2 {
+    margin: 100px 50px;
+    color: orange;
+}
+.sitemangement h2 {
+    margin: 30px;
+    color: orange;
+}
+.operation h3 {
+    font-size: x-large;
+    margin: 20px 0px 20px 0px;
+    color: peachpuff;
+}
+.operation p {
+    text-align: left;
+    color: white;
+    font-weight: 400;
+}
+.projects {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    height: 400px;
+}
+.newproject {
+    background-color: #F2B636;
+    padding: 50px;
+}
+.newproject p {
+    color: white;
+    font-size: 40px;
+}
+.newproject a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 50px;
+    font-weight: 400;
+    border-radius: 40px;
+    transition: color,background 500ms ease-in-out;
+}
+.newproject a:hover {
+    color: orange;
+    background-color: white;
+    border: none;
+}
+.footer {
+    position: sticky;
+    bottom: 0px;
+    padding: 100px 100px 50px 100px;
+    background-color: #10162b;
+    z-index: -100;
+}
+#collapsetoggle {
+    display: none;
+}#modaldialog {
+    display: none;
+}
+@media screen and (max-width:900px) {
+    .footer {
+        position: relative;
+    }
+    #collapsetoggle {
+        display: block;
+    }
+    #modaldialog {
+        display: block;
+    }
+    .newproject p {
+        font-size: 30px;
+    }
+    .newproject a {
+        padding: 20px 20px;
+    }
+}
+.colheadcont {
+    margin-bottom: 2px solid grey;
+    width: 100%;
+    list-style-type: none;
+    color: red;
+}
+.footer p {
+    color: grey;
+}
+.footer h2 {
+    color: white;
+    font-size: 40px;
+}
+dl dd {
+    color: grey;
+}
+dl dt {
+    color: orange;
+    margin: 0px 0px 20px 0px;
+}
+.footer i {
+    color: grey;
+}
+.copyright {
+    margin: 100px 0px 0px 0px;
+}
+.copy h6 {
+    color: grey;
+    float: right;
+}

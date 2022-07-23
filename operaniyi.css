@@ -1,0 +1,121 @@
+.head {
+    background-color: #0C3866;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+#navigation li a {
+    color: rgb(167, 164, 164);
+    font-weight: 500;
+    width: fit-content;
+    transition: color 500ms ease-in-out 0s;
+    cursor: pointer;
+}
+#navigation li a:hover {
+    color: rgb(255, 255, 255);
+}
+#navigation {
+    /* margin: -70px 0px 0px 400px; */
+    margin-top: -6%;
+    margin-left: 20%;
+}
+div button {
+    /* margin: -70px 0px 0px 100px; */
+    margin-top: -6%;
+    margin-left: 5%;
+}
+@media screen and (max-width: 1200px) {
+    div button {
+        /* margin: -70px 0px 0px 100px; */
+        margin-top: -6%;
+        margin-left: 18%;
+    }
+    #navtoggle button {
+        display: none;
+    }
+}
+/* #head {
+    margin: 0px 0px 0px 100px;
+} */
+.header2 {
+    background-color: whitesmoke;
+    padding: 10px;
+    
+}
+.header2 p{
+    list-style-type: none;
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: grey;
+    margin-left: 3%;
+}
+#answers {
+    padding: 50px 20px;
+    background-color: whitesmoke;
+}
+.faq {
+    text-align: center;
+    margin: 80px 0px 0px 0px;
+
+}
+.faq h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vw;
+    padding : 10px;
+}
+.faq p {
+    text-align: center;
+}
+#frasqu h6 {
+    font-size: large;
+    color: steelblue;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div p {
+    color: grey;
+    padding: 20px;
+}
+button i {
+    color: royalblue;
+}
+button i:hover {
+    color: orange;
+}
+.footer {
+    background-color: #131313;
+    padding: 50px 10px;
+    margin-top: 150px;
+    text-align: center;
+}
+.footer h2 {
+    font-size: x-large;
+    color: white;
+}
+.footer p {
+    font-size: larger;
+    text-align: justify;
+}
+.footer a {
+    color: grey;
+    text-decoration: none;
+    font-size: larger;
+    transition: color 300ms ease-in-out 0s;
+}
+.footer a:hover {
+    color: white;
+}
+.footer i {
+    color: grey;
+    padding: 10px;
+}
+.copyright {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+h6 i {
+    float: right;
+}

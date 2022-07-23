@@ -1,0 +1,205 @@
+body {
+    overflow-x: hidden;
+}
+.navigation {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.897);
+    width: 100%;
+    height: 105px;
+    z-index: 999;
+}
+#img{
+    position: absolute;
+    margin-left: 8%;
+    height: 100px;
+    width: 100px;
+}
+.navigation ul {
+    margin-left: 18%;
+    margin-top: -1%;
+}
+.navigation ul li {
+    display: inline;
+    list-style-type: none;
+}
+#head li a {
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    padding: 30px 15px;
+    cursor: pointer;
+}
+#head li a:hover {
+    border-bottom: 3px solid #3B6628;
+    transition: color 500ms ease-in-out;
+}
+.logins {
+    position: fixed;
+    /* right: -12.2%; */
+    right: -10.4em;
+    top: 30%;
+    cursor: pointer;
+    transition: right 600ms ease-in-out;
+    z-index: 990;
+    width: 200px;
+}
+.logins:hover {
+    position: fixed;
+    right: 0%;
+}
+.wrapper {
+    padding: 10px 20px 10px 10px;
+    overflow: hidden;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.wrapper i {
+    margin-right: 10px;
+}
+@media screen and (max-width: 1330px) {
+    .navigation .navbar-nav {
+        display: none;
+    }
+}
+.exams {
+    margin: 50px 0;
+}
+.exams h3 {
+    color: grey;
+    margin: 30px 0;
+    font-size: x-large;
+    font-weight: 500;
+}
+.exams p {
+    color: rgb(82, 78, 78);
+    font-size: large;
+    margin: 0px 0px 50px 0px;
+}
+.latest h3 {
+    color: grey;
+    font-size: x-large;
+    margin: 30px 0;
+    font-weight: 500;
+}
+.latest p {
+    color: rgb(82, 78, 78);
+    font-size: large;
+    margin: 0px 0px 50px 0px;
+}
+.exams button {
+    padding: 20px 0;
+    width: 250px;
+    border-radius: 0%;
+    background: red;
+    border: none;
+}
+.exams button:hover {
+    background: red;
+    width: 260px;
+    transition: width 500ms ease-in-out;
+}
+.examinations {
+    text-align: center;
+    background: #EFEFEF;
+    /* padding: 50px 0; */
+    padding: 50px 25rem;
+}
+.navigation .navbar-toggler {
+    float: right;
+    margin-top: 3%;
+}
+.navigation .navbar-toggler i {
+    font-size: 30px; 
+    color: black;
+}
+@media screen and (max-width:990px) {
+    .examinations {
+        text-align: center;
+        background: #EFEFEF;
+        /* padding: 50px 0; */
+        padding: 100px 5rem;
+    }
+    .navigation .navbar-toggler i {
+        float: right;
+        margin-top: 10%;
+    }
+}
+.examinations h2 {
+    text-transform: uppercase;
+    color: #4b4747;
+    text-align: center;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.examinations p {
+    font-size: larger;
+    color: #807d7d;
+}
+/* .downwrap {
+    background-image: url(imgs/chair-chairs-class-256491-1500x430.jpg);
+    position: fixed;
+} */
+.downloads {
+    background-image:linear-gradient(to right,#62C18A, #62C18A, #62C18A, #62C18A, #62c18ae3, #62c18ada, #62c18acc);
+    padding: 100px 5rem;
+    text-align: left;
+    margin: 0px 0px 50px 0px;
+    
+}
+.downloads h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+}
+.downloads p {
+    color: white;
+    font-weight: 700;
+}
+.downloads h2 {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer {
+    background: black;
+    padding: 6em 1em;
+}
+dl {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row img {
+    border-radius: 2px;
+}
+dl dt {
+    margin-bottom: 20px;
+    font-weight:800;
+    font-size: larger;
+    font-family: cursive;
+}
+/* carousel */
+.carousel-caption .card h2,p{
+    color: white;
+}
+.carousel-caption .cardio button {
+    border: 2px solid white;
+    color: white;
+    width: fit-content;
+    background: rgba(31, 31, 31, 0.473);
+}
+.carousel-caption>.cardio {
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    text-align: left;
+}
+.carousel-caption .card {
+    background: rgba(31, 31, 31, 0.473);
+    width: 450px;
+}
+.carousel .card p {
+    color: rgb(255, 247, 231);
+}

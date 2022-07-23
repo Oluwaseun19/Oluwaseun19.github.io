@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survivalfund FAQs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="fontawesome-free-6.0.0-beta2-web/css/all.css">
+    <link rel="icon" type="image/gif" href="imgs/animated_favicon1.gif">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
+
+    <style>
+        body {
+            background-color: #218C74;
+        }
+        li a {
+            color: white;
+        }
+        li a:hover {
+            color: rgb(180, 178, 178);
+        }
+        .header {
+            background-image: linear-gradient(to right, #0e725c, #218C74);
+            padding: 20px 0px;
+            height: 80px;
+        }
+        #seun {
+            margin-top: -3%;
+            margin-left: inherit;
+        }
+        #seun ul {
+            margin-left: 13%;
+        }
+        #seun ul li a {
+            color: white;
+            margin-right: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            transition: color 500ms ease-in-out;
+        }
+        #seun ul li a:hover {
+            color: rgb(204, 197, 197);
+        }
+        .navbar-brand img {
+            margin-left: 4%;
+        }
+        .navbar-expand-lg {
+            margin-left: 5%;
+        }
+        i.fa-bars {
+            position: absolute;
+            top: 4%;
+            right: 10%;
+            color: white;
+            font-size: 25px;
+            display: none;
+        }
+        .canvas-list li {
+            list-style-type: none;
+            color: white;
+            margin: 0px 0px 30px 0px;
+            cursor: pointer;
+        }
+        .canvas-list li a {
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            margin: 0px 0px 30px 0px;
+            cursor: pointer;
+        }
+        .canvas-list li a:hover {
+            color: rgb(202, 200, 200);
+            transition: color 500ms ease-in-out;
+        }
+        @media screen and (max-width: 990px){
+            i.fa-bars {
+                display: block;
+            }
+        }
+        .card-header {
+            background-color: white;
+            height: 8rem;
+            padding: 20px 10px 20px 10px;
+            border: none;
+            outline: none;
+        }
+        h6 {
+            color: #218C74;
+            font-size: 20px;
+            font-weight: 400;
+            cursor: pointer;
+            padding: 10px 3px 1px 5px
+        }
+        .collapse p {
+            color: black;
+        }
+        .card {
+            height: 80px;
+        }
+        @media (max-width: 40em) {
+            .card {
+                height: max-content;
+            }
+        }
+        .card-header i {
+            float: right;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        #answers {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar-expand-lg">
+            <a class="navbar-brand" href="swifttalk.html">
+                <img src="imgs/sirvivalfunds logo.png" height="30px" width="195px"/>
+            </a>
+            <i class="fa fa-bars fa-2x" data-bs-toggle="offcanvas" data-bs-target="#offcanvastoggle" role="button"></i>
+            <div class="collapse navbar-collapse" id="seun">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="operaniyi.html">Operaniyi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="valuemaxpage.html">Valuemaxpage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="survivalfundfaq.html">Survivalfundfaq</a></li>
+                    <li class="nav-item"><a class="nav-link" href="survivalfundhome.html">Survivalfundhome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="survivalfundregister.html">Survivalfundregister</a></li>
+                    <li class="nav-item"><a class="nav-link" href="simplifiedcredit.html">Simplifiedcredit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="necopage.html">Necopage</a></li>
+                </ul>
+                <img src="imgs/industry-logo.395ef1e7.png" height="30px" width="168px"/>
+            </div>
+        </div>
+        <div id="offcanvastoggle" class="offcanvas offcanvas-end" tabindex="-1">
+            <div class="offcanvas-header" style="background: #218C74;">
+                <img src="imgs/sirvivalfunds logo.png" height="35px" width="260px"/>
+                <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body" style="background: #218C74;">
+                <ul class="canvas-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="operaniyi.html">Operaniyi</a></li>
+                    <li><a href="valuemaxpage.html">Valuemaxpage</a></li>
+                    <li><a href="survivalfundfaq.html">Survivalfundfaq</a></li>
+                    <li><a href="survivalfundhome.html">Survivalfundhome</a></li>
+                    <li><a href="survivalfundregister.html">Survivalfundregister</a></li>
+                    <li><a href="simplifiedcredit.html">Simplifiedcredit</a></li>
+                    <li><a href="necopage.html">Necopage</a></li>
+                </ul> 
+                <img src="imgs/industry-logo.395ef1e7.png" height="30px" width="165px" alt="FMITI logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 5%;" id="answers">
+        <div class="accordian" id="frasqu">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item1">
+                    <h6>My account has been locked, what should i do?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item1" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>Your account was locked because you tried to
+                    log in with a wrong password for more than 5 times. You 
+                    will have to wait for 5 minutes to log in again or click
+                    on forgot password to reset your password</P>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item2">
+                    <h6>I cannot remeber my password. What should I do?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item2" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    <dl>
+                        <dt>To reset your password</dt>
+                        <dd>kindly go to the Login page.</dd>
+                        <dd>Click on 'Forgot Password'.</dd>
+                        <dd>If it exists in our database,
+                            an activation code will be sent to
+                            your phone number and email in our 
+                            database and you will be redirected to
+                            a page to enter the code you received and
+                            reset your password
+                        </dd>
+                    </dl>
+                    
+                </P>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item3">
+                    <h6>What kind of password can i use?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item3" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    Your password should be case sensitive. This means 
+                    that your password should be typed in lowercase,
+                    i.e small letters. Use a password you can easily
+                    remember.
+                </P>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item4">
+                    <h6>Can i add more than one Organisation?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item4" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>NO. You cannot add more than one organisation.</P>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item5">
+                    <h6>I am trying to eit my Oranisation's details (like
+                         CAC number) but its not allowing me to.
+                        What should I do?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item5" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    <dd>
+                        <dt>To edit your organisaton details,</dt>
+                        <dd>Go to your dashboard or click on 'Manage Profile'</dd>
+                        <dd>scroll down to where your organisation details are displayed.</dd>
+                        <dd>Click on the 'Edit Organisation' button</dd>
+                        <dd>Edit the details you want to change</dd>
+                        <dd>Click on the 'add Organisation' button at the bottom of the page to sav again</dd>
+                    </dd>
+                </P>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item6">
+                    <h6>Can Enter my BVN as an employer and a beneficiary?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item6" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    NO. You cannot enter your BVN and/or account details twice on the
+                     system. If you do so, you will not be able to submit your application
+                </P>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item7">
+                    <h6>As an employee, can I register with two different organisations I work with?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item7" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>NO. You cannot register with teo different organisations. Only 
+                    one organisation is allowed.
+                </P>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item8">
+                    <h6>I am trying to edit my account details what should i do?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item8" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    You cannot edit your account details after you have submitted it. Please check the account number and BVN before submitting it.
+                </P>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item9">
+                    <h6>Which document am I exp[ected to upload,, for Proof of salary Payment to Employees?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item9" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    Proof of Salary can be your bank statement, payment advice or pay slips. You are expected to upload your organisation's proof of last three (3) salaries paid to your employees. This document should be a jpeg image or pdf document
+                </P>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item10">
+                    <h6>My documents are more than 2MB, what should i do?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item10" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    If your statement of account is more than 2MB, please use the available file compressor online to compress your file size (such as www.smallpdf.com , www.pdfcompressor.com, or any other compressor).
+                </P>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item11">
+                    <h6>How do I check my file size before uploading it?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item11" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    Right click on the file document on your computer and click on properties. The file size will be displayed.  
+                </P>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item12">
+                    <h6>The site is not opening, what should i do?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item12" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    Kindly clear the cache of your browser and refresh the page again. Make sure your browser is up to date.   
+                </P>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item13">
+                    <h6>Why did i get the error message 'Unable to submit, please check your network'?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item13" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey">
+                <P>
+                    If your statement of account is more than 2MB, please use the available file compressor online to compress your file size (such as www.smallpdf.com , www.pdfcompressor.com, or any other compressor).
+                </P>
+            </div>
+
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#frasqu-item14">
+                    <h6>Which document format should I upload?<i class="fa fa-angle-down"></i></h6>
+                </div>
+            </div>
+            <div class="collapse" id="frasqu-item14" data-parent="#frasqu" style="background-color: whitesmoke; padding: 20px; border: none; color: grey"                                                                                                                                      >
+                <P>
+                    The document should be a jpeg image or pdf document    
+                </P>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span><span style="color: red;">Caveat:</span> This site is a student project made for practise purposes only and is not meant to be a clone of the original site.<i class="fa fa-smile-o" style="color: red;"></i></span>
+    </div>
+</body>
+</html>

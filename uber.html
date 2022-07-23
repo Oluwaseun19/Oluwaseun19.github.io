@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta2-web/css/all.css">
+
+    <style>
+        section.footer li {
+            list-style-type: none;
+        }
+        section.footer li a {
+            text-decoration: none;
+            color: white;
+        }
+        section.footer dl dd {
+            font-weight: 100;
+            font-size: medium;
+        }
+        .card {
+            border: none;
+        }
+        .offcanvas li {
+            list-style-type: none;
+            margin: 0px 0px 30px 0px;
+            font-size: larger;
+        }
+        .offcanvas li a {
+            color: white;
+            text-decoration: none;
+            transition: color 500ms ease-in-out;
+        }
+        .offcanvas li a:hover {
+            color: grey;
+        }
+        dd:hover {
+            color: grey;
+            transition: color 500ms ease-in-out;
+        }
+        dt {
+            color: rgb(150, 79, 12);
+        }
+        .offcanvas .btn-close {
+            color: white;
+            background-color: white;
+            margin-left: 90%;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark px-3 py-3" style="background-color: black;">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand mx-lg-5">
+                <img src="imgs/Uber-for-Business.svg" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#list">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse mx-sm-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navitem">
+                        <a href="#" class="nav-link">How it works <i class="fa fa-chevron-down px-1" style="font-size: 12px;"></i></a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#" class="nav-link">Solutions <i class="fa fa-chevron-down px-1" style="font-size: 12px;"></i></a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#" class="nav-link">Industries and teams <i class="fa fa-chevron-down px-1" style="font-size: 12px;"></i></a>
+                    </li>
+                    <li class="navitem">
+                        <a href="Portfolio.html" class="nav-link">Portfolio <i class="fa fa-chevron-down px-1" style="font-size: 12px;"></i></a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#" class="nav-link" style="margin-left: 8rem;"><i class="fa fa-globe"></i><span class="h5 mx-2">EN</span></a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="button">
+                <button class="btn btn-secondary d-inline" data-bs-toggle="modal" data-bs-target="#modalform">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas-stuff">
+        <div class="offcanvas offcanvas-start mx-sm-5" id="list" data-bs-scroll="true" tabindex="-1" style="background-color: black;">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset text-light" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="text-dark">
+                    <li class="text-dark">
+                        <a href="#" class="link">How it works <i class="fa fa-chevron-down px-1" style="font-size: 12px;"></i></a>
+                    </li>
+                    <li class="text-dark">
+                        <a href="#" class="link">Solutions <i class="fa fa-chevron-down px-1" style="font-size: 12px;"></i></a>
+                    </li>
+                    <li class="text-dark">
+                        <a href="#" class="link">Industries and teams <i class="fa fa-chevron-down px-1" style="font-size: 12px;"></i></a>
+                    </li>
+                    <li class="text-dark">
+                        <a href="#" class="link">Resources <i class="fa fa-chevron-down px-1" style="font-size: 12px;"></i></a>
+                    </li>
+                    <li class="text-dark">
+                        <a href="#" class="link" style="margin-left: 8rem;"><i class="fa fa-globe"></i><span class="h5 mx-2">EN</span></a>
+                    </li>
+                    <li class="text-dark">
+                        <a href="#" class="link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-stuff">
+        <div class="modal fade" tabindex="-1" id="modalform">
+             <div class="modal-dialog modal-fullscreen-sm-down">
+                 <div class="modal-content bg-light">
+                     <div class="modal-header">
+                         <div class="modal-title"></div>
+                         <button class="btn-close" data-bs-dismiss="modal"></button>
+                     </div>
+                     <div class="modal-body">
+                        <div class="form">
+                            <form class="form p-4 bg-light" id="form" style="border-radius: 20px;">
+                                <div class="form-control mb-4 p-3">
+                                    <label class="h4 text-dark" for="username">Username</label>
+                                    <input class="form-control" type="text" id="username">
+                                    <small id="smallone"></small>
+                                </div>
+                                <div class="form-control mb-4 p-3">
+                                    <label class="h4 text-dark" for="Email">Email</label>
+                                    <input class="form-control" type="text" id="Email">
+                                    <small id="smalltwo"></small>
+                                </div>
+                                <div class="form-control mb-4 p-3">
+                                    <label class="h4 text-dark" for="password">Password</label>
+                                    <input class="form-control" type="text" id="password">
+                                    <small id="smallthree"></small>
+                                </div>
+                                <div class="form-control mb-4 p-3">
+                                    <label class="h4 text-dark" for="passwordcheck">Confirm Password</label>
+                                    <input class="form-control" type="text" id="passwordcheck">
+                                    <small id="smallfour"></small>
+                                </div>
+                                <button class="btn btn-info text-dark">Submit</button>
+                            </form>
+                        </div>
+                     </div>
+                     <!-- <div class="modal-footer">
+                         <button class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                         <button class="btn btn-warning">Send Message</button>
+                     </div> -->
+                 </div>
+             </div>
+        </div>
+       
+    </div>
+
+    <section class="advert">
+        <div class="text-center align-content-center px-5 py-5" style="background-image: url(imgs/zone.jpg);">
+            <h1 class="py-5 text-light" style="font-size: 50px; text-transform: capitalize;">
+                The best of Uber for your Business
+            </h1>
+            <p class="text-light pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga sint maxime a consequatur iure.</p>
+            <button class="btn btn-dark p-3 my-3">Get Started for free</button>
+        </div>
+    </section>
+    <section class="global">
+        <div class="container">
+            <h2 class="my-5">A global platform for all your business needs</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-sm-6">
+                    <div class="card text-dark">
+                        <div class="card-body">
+                            <img class="img-fluid" src="imgs/firstillustration-rides.svg" alt="illustration">
+                            <div class="card-title">
+                                <p class="h2 mb-3 mt-2">Rides</p>
+                                <div class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque fugit quasi laudantium possimus debitis.
+                                </div>
+                            </div>
+                            <button class="btn my-3" style="border-bottom: 1px solid grey;">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-6">
+                    <div class="card text-dark">
+                        <div class="card-body">
+                            <img class="img-fluid" src="imgs/secondillustration-eats-homepage.svg" alt="illustration">
+                            <div class="card-title">
+                                <p class="h2 mb-3 mt-2">Meals</p>
+                                <div class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque fugit quasi laudantium possimus debitis.
+                                </div>
+                            </div>
+                            <button class="btn my-3" style="border-bottom: 1px solid grey;">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-6">
+                    <div class="card text-dark">
+                        <div class="card-body">
+                            <img class="img-fluid" src="imgs/thirdillustration-delivery.svg" alt="illustration">
+                            <div class="card-title">
+                                <p class="h2 mb-3 mt-2">Delivery</p>
+                                <div class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque fugit quasi laudantium possimus debitis.
+                                </div>
+                            </div>
+                            <button class="btn my-3" style="border-bottom: 1px solid grey;">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reason mt-5">
+        <div class="container">
+            <p class="h2 my-5 w-50">
+                Why 9/10 coustomers recommend our platform*
+            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="w-100 img-fluid" src="imgs/firsticon-phone-map-3_2.svg" alt="illustration">
+                </div>
+                <div class="col-lg-6">
+                    <div class="wrapper justify-content-between">
+                        <p class="h3">
+                            Access Uber globally
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, rerum! Soluta recusandae voluptate non quia!
+                        </p>
+                        <button class="btn my-3 mb-5" style="border-bottom: 1px solid grey;">Learn more</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100 img-fluid" src="imgs/seconddollar-bill-3_2.svg" alt="illustration">
+                </div>
+                <div class="col-lg-6">
+                    <div class="wrapper justify-content-between">
+                        <p class="h3">
+                            Reduce and control spending
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, rerum! Soluta recusandae voluptate non quia!
+                        </p>
+                        <button class="btn my-3 mb-5" style="border-bottom: 1px solid grey;">Learn more</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100 img-fluid" src="imgs/thirdshield-star-3_2.svg" alt="illustration">
+                </div>
+                <div class="col-lg-6">
+                    <div class="wrapper justify-content-between">
+                        <p class="h3">
+                            Make safelty a top priority
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, rerum! Soluta recusandae voluptate non quia!
+                        </p>
+                        <button class="btn my-3 mb-5" style="border-bottom: 1px solid grey;">Learn more</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100 img-fluid" src="imgs/fourthcommunity-3_2.svg" alt="illustration">
+                </div>
+                <div class="col-lg-6">
+                    <div class="wrapper justify-content-between">
+                        <p class="h3">
+                            Delight your people
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, rerum! Soluta recusandae voluptate non quia!
+                        </p>
+                        <button class="btn my-3 mb-5" style="border-bottom: 1px solid grey;">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <p class="lead mt-3 mb-5 w-80">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur facilis, itaque quasi porro quod vitae ipsa dignissimos quisquam recusandae?
+            </p>
+        </div>
+    </section>
+
+    <section class="join text-dark py-5" style="background-color: rgba(233, 233, 233, 0.438);">
+        <div class="container">
+            <p class="h2 mb-3" style="text-transform: capitalize;">
+                Join over 150,000 companies working with us, including more than half of the Fortune 500
+            </p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="wrapper">
+                        <img src="imgs/logo-zoom.svg" class="img-fluid w-50" alt="illustration">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta quo officia inventore amet iure explicabo veniam voluptates, dolor ut.
+                        </p>
+                        <button class="btn my-3 mb-5" style="border-bottom: 1px solid grey;">Learn more</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="wrapper">
+                        <img src="imgs/logo-cocacola.svg" class="img-fluid w-50" alt="illustration">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta quo officia inventore amet iure explicabo veniam voluptates, dolor ut.
+                        </p>
+                        <button class="btn my-3 mb-5" style="border-bottom: 1px solid grey;">Learn more</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="wrapper">
+                        <img src="imgs/logo-samsung.svg" class="img-fluid w-50" alt="illustration">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta quo officia inventore amet iure explicabo veniam voluptates, dolor ut.
+                        </p>
+                        <button class="btn my-3 mb-5" style="border-bottom: 1px solid grey;">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="business m-5 text-center p-lg-4 p-sm-1">
+        <div class="container">
+            <p class="h1 mb-5">
+                Your business is going places. We’re here to help
+            </p>
+            <button class="btn btn-dark text-light px-3 py-3">
+                Get started for free
+            </button>
+        </div>
+    </section>
+    
+    <section class="footer p-5" style="background-color: black;">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <ul class="itemone">
+                    <li class="mt-5 mb-5"><a href="#" class="h2">Uber for Business</a></li>
+                    <li><a href="#">Visit Help Center</a></li>
+                </ul>
+                <ul class="itemtwo text-end">
+                    <li class="mb-3 mt-2"><a href="#">Do not sell my info (California)</a></li>
+                    <li><a href="#">Google Data Policy</a></li>
+                </ul>
+            </div>
+            <div class="row container mt-5 text-light">
+                <div class="col-lg-3 col-md-6">
+                    <dl>
+                        <dt class="h4 mb-3">About us</dt>
+                        <dd>Newsroom</dd>
+                        <dd>Blog</dd>
+                        <dd>Careers</dd>
+                    </dl>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <dl>
+                        <dt class="h4 mb-3">Products</dt>
+                        <dd>Uber Eats for food Delivery</dd>
+                        <dd>Uber for Business</dd>
+                        <dd>Uber Freight</dd>
+                        <dd>Uber Health</dd>
+                    </dl>
+                </div>
+            </div>
+            <a href="#top"><button class="btn btn-info py-3 px-4" style="position: fixed; right: 2%; bottom: 10%; border-radius: 50% 20% / 10% 40%;"><i class="fa fa-chevron-up"></i></button></a>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
