@@ -154,7 +154,7 @@
         color: rgb(68, 68, 68);
         text-align: justify;
 
-        font-weight: 600;
+        font-weight: 300;
         font-size: 1.1em;
     }
     @media (min-width: 40em) {
