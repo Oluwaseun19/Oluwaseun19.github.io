@@ -1,0 +1,311 @@
+    h1,h2,h2,h4,h5,h6 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    button a {
+        text-decoration: none;
+    }
+    .btn-group button a {
+        color: black;
+        border: 2px solid black;
+        padding: .5em;
+        transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    }
+    .btn-group button a:hover {
+        color: white;
+        background-color: black;
+    }
+    .btn-group button + button a {
+        color: #309164;
+        border: 2px solid #309164;
+        transition: 300ms;
+    }
+    .btn-group button + button a:hover {
+        color: white;
+        background-color: #309164;
+    }
+    #topting {
+        position: sticky;
+        top: 0%;
+        z-index: 9999;
+        background-color: rgba(255, 255, 255, 0.411);
+    }
+    section.first {
+        height: 100vh;
+        padding: 2em 3em;
+        background-image: url(imgs/back2.jpg);
+        background-repeat: no-repeat;
+        background-position-y: -240px;
+    }
+    section.first {
+        color: black;
+    }
+    section.first .d-sm-flex {
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width:60em) {
+        section.first img {
+            display: none;
+        }
+        section.first {
+            background-image: url(imgs/samplecopy.jpg);
+            /* background-position: bottom right; */
+            background-position: center top;
+            background-size: 100%;
+            height: max-content;
+            color: white;
+        }
+        section.first .text h5 {
+            color: white;
+        }
+        section.first .text h5>span {
+            color: #309164;
+        }
+        .btn-group button a {
+            color: white;
+            border: 2px solid white;
+        }
+        .btn-group button a:hover {
+            color: black;
+            border: 2px solid white;
+            background-color: white;
+        }
+        .btn-group button + button a {
+            color: #309164;
+            border: 2px solid #309164;
+            transition: 300ms;
+        }
+        .btn-group button + button a:hover {
+            color: black;
+            background-color: #309164;
+            border: 2px solid #309164;
+        }
+
+    }
+    @media (max-width: 40em) {
+        section#testimonies .row div {
+            height: 200px;
+            margin-bottom: 4em;
+        }
+
+    }
+    .second ul.list li {
+        list-style-type: circle;
+        font-weight: 200;
+    }
+    a {
+        text-decoration: none;
+    }
+    .navbar-nav .navitem a.nav-link {
+        color: black;
+        padding: 10px;
+        /* font-size: larger; */
+        /* font-family: Arial, Helvetica, sans-serif; */
+        transition: color 500ms ease-in-out;
+    }
+    .navbar-nav .navitem a.nav-link:hover {
+        color: green;
+        font-weight: 300;
+    }
+    #services .image img {
+        border-radius: 30px;
+        margin: 20px 0px 0px 0px;
+    }
+    .offcanvas-stuff .offcanvas {
+        background-color: #157347;
+        height: 350px;
+        overflow: hidden;
+    }
+    .offcanvas-stuff .offcanvas .offcanvas-header button {
+        margin: 3% 0 0 0;
+    }
+    .offcanvas-stuff .offcanvas ul li {
+        list-style-type: none;
+        margin: 0px 0px 20px 10%;
+        
+    }
+    .offcanvas-stuff .offcanvas ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 500ms ease-in-out, margin 500ms ease-in-out;
+    }
+    .offcanvas-stuff .offcanvas ul li a:hover {
+        color: rgb(42, 165, 138);
+        margin-left: 20px;
+    }
+    section#achievements {
+        background-color: rgba(128, 128, 128, 0.281);
+    }
+    section#achievements .card {
+        border: none;
+    }
+    section#achievements .row.p-3 {
+        justify-content: center;
+        align-items: center;
+    }
+    section#achievements .row.p-3 .col-md-6 img {
+        padding: 0em 1em;
+        border-radius: 60px;
+    }
+    section#achievements .row .col-md-6 p {
+        color: rgb(68, 68, 68);
+        text-align: justify;
+
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+    @media (min-width: 40em) {
+        section#achievements .card {
+            border: none;
+            transition: margin 500ms ease-in-out;
+        }
+        section#achievements .card:hover {
+            margin: -20px 0px 0px 0px;
+        }
+        section#achievements .row.p-3 {
+            padding: 0em 1em;
+        }
+        section.six .card::before {
+            content: "";
+            position: absolute;
+            background-color: #15734788;
+            height: 8px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            transition: 700ms;
+        }
+        section.six .card:hover::before {
+            height: 100%;
+        }
+    }
+    section#expertise {
+        background-color: rgba(128, 128, 128, 0.281);
+    }
+    section.five {
+        background-color: rgba(126, 126, 126, 0.062);
+    }
+    section.six {
+        background-color: rgba(126, 126, 126, 0.062);
+    }
+    section.six .card {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        border: none;
+        /* transition: color 500ms ease-in-out; */
+    }
+    
+    /* section.six .card:hover {
+        color: red;
+    } */
+    section.seven .button button a {
+        color: black;
+        border: 2px solid black;
+        padding: 1em 2em;
+        transition: 400ms;
+    }
+    section.seven .button button a:hover {
+        color: white;
+        background-color: black;
+    }
+    #link {
+        position: relative;
+        text-decoration: none;
+        padding: 5px 0px;
+    }
+    #link::after {
+        content: "";
+        position: absolute;
+        background-color: green;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        transition: 300ms;
+    }
+    #link:hover::after {
+        width: 100%;
+    }
+    section.eight {
+        background-color: rgba(126, 126, 126, 0.062);
+    }
+    section.eight form button {
+        color: white;
+        width: 100%;
+        background-color: black;
+        margin: 1em 0 0 0;
+        padding: 1em 0em;
+    }
+    section.eight form button:hover {
+        color: white;
+        background-color: black;
+    }
+    section.eight form input {
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 60px;
+        padding: 30px;
+        margin: 0px 0px 30px 0px;
+    }
+    section.eight form textarea#message {
+        border: none;
+        resize: none;
+        padding: 20px;
+        width: 100%;
+        font-weight: 100;
+        outline: none;
+    }
+    section#testimonies .row div {
+        position: relative;
+        transition: opacity 1s ease-out;
+    }
+    /* section#testimonies .row div img::before, 
+    section#testimonies .row div img::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 1.5em;
+    }
+    section#testimonies .row div img {
+        border-radius: 20px;
+    }
+    section#testimonies .row div img::after:hover {
+        border-left: 3px solid red;
+        border-right: 3px solid red;
+
+    } */
+    section#testimonies .row div:hover img {
+        opacity: .5;
+    }
+    section#testimonies .row div:hover p {
+        color: black;
+        font-size: 2em;
+    }
+    section#testimonies .row div p {
+        color: black;
+        z-index: 2;
+        transition: color 1s ease-out, font-size 1s ease-out;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    section.footer #scroller {
+        position: fixed;
+        right: 2%;
+        bottom: 5%;
+        border-radius: 50% 20% / 10% 40%;
+        background: black;
+        color: white;
+        border: 1px solid white;
+    }
+    section.footer {
+        background-color: black;
+    }
