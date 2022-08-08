@@ -3,6 +3,7 @@
     }
     body {
         overflow-x: hidden;
+        box-sizing: border-box;
     }
     button a {
         text-decoration: none;
@@ -26,18 +27,28 @@
         color: white;
         background-color: #309164;
     }
+    video {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        object-fit: fill;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -1;
+    }
     #topting {
         position: sticky;
         top: 0%;
         z-index: 9999;
-        background-color: rgba(255, 255, 255, 0.411);
+        background-color: rgba(255, 255, 255, 0.527);
     }
     section.first {
         height: 100vh;
         padding: 2em 3em;
-        background-image: url(imgs/back2.jpg);
+        /* background-image: url(imgs/portraitsample1copy.jpg); */
         background-repeat: no-repeat;
-        background-position-y: -240px;
+        background-position: bottom;
     }
     section.first {
         color: black;
@@ -47,23 +58,27 @@
         align-items: center;
     }
     @media (max-width:60em) {
+        video {
+            display: none;
+        }
         section.first img {
             display: none;
         }
         section.first {
-            background-image: url(imgs/samplecopy.jpg);
-            /* background-position: bottom right; */
-            background-position: center top;
-            background-size: 100%;
+            background-image: url(imgs/happy-freelancer-with-computer-home-young-man-sitting-armchair-using-laptop-chatting-online-smiling-vector-illustration-distance-work-online-learning-freelance_74855-8401.jpg);
+            background-position: center;
             height: max-content;
             color: white;
             padding: 2em 1em;
         }
         section.first .text h5 {
-            color: white;
+            color: black;
         }
         section.first .text h5>span {
             color: #309164;
+        }
+        section.first .text p {
+            color: white;
         }
         .btn-group button a {
             color: white;
@@ -76,8 +91,8 @@
             background-color: white;
         }
         .btn-group button + button a {
-            color: white;
-            border: 2px solid white;
+            color: black;
+            border: 2px solid black;
             display: block;
             transition: 300ms;
         }
