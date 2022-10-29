@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/js/bootstrap.js">
+    <script src="portfolio.js" defer></script>
 </head>
 
 <body>
-    <video src="imgs/pexels-mart-production-7566043.mp4" autoplay muted loop></video>
+    <video src="imgs/pexels-mart-production-7565816.mp4" autoplay muted loop></video>
     <div class="navigation" id="topting">
         <nav class="navbar navbar-expand-lg px-3 py-3">
             <div class="container-fluid">
                 <a href="Portfolio.html" class="navbar-brand mx-lg-5">
-                    <h2 class="text-dark">
+                    <!-- <h2 class="text-dark">
                         <span class="text-dark">Port<span class="text-success">folio</span></span>
-                    </h2>
+                    </h2> -->
+                    <img src="imgs/personallogo3copy.png" alt="LOGO">
                 </a>
     
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#list">
@@ -32,7 +34,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="navitem">
-                            <a href="#" class="nav-link lead">Home</a>
+                            <a href="#" class="nav-link lead">Top</a>
                         </li>
                         <li class="navitem">
                             <a href="#achievements" class="nav-link lead">About</a>
@@ -60,19 +62,19 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="lead">
-                        <li class="lead">
+                        <li class="lead hidden">
                             <a href="#" class="link">Home</a>
                         </li>
-                        <li class="lead">
+                        <li class="lead hidden">
                             <a href="#achievements" class="link">About</a>
                         </li>
-                        <li class="lead">
+                        <li class="lead hidden">
                             <a href="#services" class="link">My Services</a>
                         </li>
-                        <li class="lead">
+                        <li class="lead hidden">
                             <a href="#testimonies" class="link">Portfolio</a>
                         </li>
-                        <li class="lead">
+                        <li class="lead hidden">
                             <a href="#form" class="link">Contact</a>
                         </li>
                     </ul>
@@ -84,73 +86,94 @@
     <section class="first">
         <div class="d-sm-flex container">
             <div class="text">
-                <h5 class="h5">
-                    Hello, I'm Oyedepo Oluwaseun, I'm a <span class="h1 d-block my-4">Frontend Web Developer</span>
+                <h5 class="h5 hiddentwo">
+                    Hello, I'm <span class="text-light">Oyedepo Oluwaseun,</span> I'm a <span class="h1 d-block my-4">Frontend Web Developer</span>
                 </h5>
-                <p class="lead w-sm-50">
-                    I love web design and coding and have been working on my portfolio since 2021.
+                <p class="lead w-sm-50 hidden">
+                    I love coding and web design, and I have been working on my portfolio since 2021.
                     I can give your business a new creative start right away!
                 </p>
                 <div class="btn-group mt-4">
-                    <button class="btn"><a class="lead" href="#testimonies">My Projects</a></button>
-                    <button class="btn"><a class="lead" href="#form">Hire Me</a></button>
+                    <button class="btn hidden"><a class="lead" href="#testimonies">My Projects</a></button>
+                    <button class="btn hidden"><a class="lead" href="#form">Hire Me</a></button>
                 </div>
             </div>
-            <img class="img-fluid mx-2 my-4" src="imgs/portraitsample1copy-removebg-preview (2).png" alt="illustration" width="380px" style="border-radius: 50% 20% / 10% 40%;">
+            <img class="img-fluid mx-2 my-4 hiddentwo" src="imgs/portraitsample1copy-removebg-preview (2).png" alt="illustration" width="380px" style="border-radius: 50% 20% / 10% 40%;">
         </div>
     </section>
 
     <section class="third py-5 text-center bg-light" id="achievements">
-        <h2 class="lead text-success mb-4">About Me</h2>
+        <h2 class="lead text-success mb-4 hidden">About Me</h2>
         <div class="d-sm-flex container">
-            <div class="exp px-5">
+            <div class="hidden exp px-5">
                 <h1>18</h1>
                 <p class="lead">months of experience working</p>
             </div>
             <div class="arch px-2 mb-5">
-                <div class="h2">I'm a designer and developer with a passion for web design</div>
-                <div class="row mt-4 g-3">
-                    <div class="col-md-6 col-lg-4 text-start">
+                <div class="h2 hidden">I'm a designer and developer with a passion for web design</div>
+                <div class="row mt-4 g-3" id="all">
+                    <div class="col-md-6 col-lg-4 col-sm-12 text-start hidden">
                         <div class="card py-3" style="background-color: rgba(128, 128, 128, 0.151);">
                             <div class="card-body">
                                 <span><i class="fa fa-lightbulb fa-3x mb-2 text-success"></i></span>
                                 <div class="card-title">
                                     <div class="lead text-dark">Creative Design</div>
-                                    <span><a class="text-success" href="#">Explore More <i class="fa fa-arrow-right"></i></a></span>
+                                    <span><a class="text-success open-modal1">Explore More <i class="fa fa-arrow-right"></i></a></span>
+                                    <dialog class="modal1" id="modal">
+                                        <p>
+                                            Give your business a modern new look on the web
+                                        </p>
+                                        <button class="btn close-modal1">close</button>
+                                    </dialog>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 text-start">
+                    <div class="col-md-6 col-lg-4 col-sm-12 text-start hidden">
                         <div class="card py-3" style="background-color: rgba(126, 126, 126, 0.151);">
                             <div class="card-body">
                                 <span><i class="fas fa-laptop-code fa-3x mb-2 text-success"></i></span>
                                 <div class="card-title">
                                     <div class="lead text-dark">Web Design</div>
-                                    <span><a class="text-success" href="#">Explore More <i class="fa fa-arrow-right"></i></a></span>
+                                    <span><a class="text-success open-modal2">Explore More <i class="fa fa-arrow-right"></i></a></span>
+                                    <dialog class="modal2" id="modal">
+                                        <p>
+                                            I can bring all your incredible designs to life
+                                        </p>
+                                        <button class="btn close-modal2">close</button>
+                                    </dialog>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 text-start">
+                    <div class="col-md-6 col-lg-4 col-sm-12 text-start hidden">
                         <div class="card py-3" style="background-color: rgba(126, 126, 126, 0.151);">
                             <div class="card-body">
                                 <span><i class="fas fa-layer-group fa-3x mb-2 text-success"></i></span>
                                 <div class="card-title">
                                     <div class="lead text-dark">Brand Identity</div>
-                                    <span><a class="text-success" href="#">Explore More <i class="fa fa-arrow-right"></i></a></span>
+                                    <span><a class="text-success open-modal3">Explore More <i class="fa fa-arrow-right"></i></a></span>
+                                    <dialog class="modal3" id="modal">
+                                        <p>
+                                            Giving your brand a unique Identity and style
+                                        </p>
+                                        <button class="btn close-modal3">close</button>
+                                    </dialog>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="dialogs">
+                
+            </div>
         </div>
-        <div class="row p-3">
-            <div class="col-md-6">
+        <div class="row p-3" style="width: 100%;">
+            <div class="col-md-6 hidden">
                 <img class="img-fluid" src="imgs/portraitsample1copy-removebg-preview (1).png" alt="Portrait">
             </div>
-            <div class="col-md-6 mt-3">
+            <div class="col-md-6 mt-3 hidden">
                 <p class="p-2">
                     I am a hard-working and dedicated web developer with a flair for creating elegant solutions in the least amount of time, i started my programming journey in the year 2021 with the vision of changing my immediate environment and have fallen in love 
                     with it ever since. Within a few months of learning, my skills had imorved greatly. I have developed a number of different websites, ranging from ecommerce webapps to customers web portal and blog sites.
@@ -164,35 +187,35 @@
 
     <section class="fourth text-center py-5 bg-light" id="expertise">
         <div class="container">
-            <p class="lead">MY SKILLS</p>
-            <p class="h4">My Area of Expertise</p>
+            <p class="lead hidden">MY SKILLS</p>
+            <p class="h4 hidden">My Area of Expertise</p>
             <div class="progress-bars">
-                <div class="row gy-5">
-                    <div class="col-md-6 col-sm-12">
+                <div class="row gy-5" id="skillBars">
+                    <div class="col-md-6 col-sm-12 hidden">
                         <p class="lead">HTML5</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-6 col-sm-12 hidden">
                         <p class="lead">CSS3</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-6 col-sm-12 hidden">
                         <p class="lead">JavaScript</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-6 col-sm-12 hidden">
                         <p class="lead">Bootstrap</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-6 col-sm-12 hidden">
                         <p class="lead">React Js</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
@@ -213,22 +236,22 @@
         <div class="container">
             <div class="d-md-flex">
                 <div class="text">
-                    <h6 class="text-success mb-3 lead">
+                    <h6 class="text-success mb-3 lead hidden">
                         MY SERVICES
                     </h6>
-                    <h2 class="text-secondary">
+                    <h2 class="text-secondary hidden">
                         Build your brand and grow your business
                     </h2>
-                    <p class="lead">
+                    <p class="lead hidden">
                         I can give your business a new creative start right away! you can download
                             my resume in order to learn the details of my professinal life as a web developer.
                     </p>
                     <ul class="list">
-                        <li>UI/UX Design and Development</li>
-                        <li>Branding Design and Identity</li>
-                        <li>Mobile App Design</li>
-                        <li>Art, Logo, SVG & illustration</li>
-                        <li>PSD Design, Photoshop</li>
+                        <li class="hidden">UI/UX Design and Development</li>
+                        <li class="hidden">Branding Design and Identity</li>
+                        <li class="hidden">Mobile App Design</li>
+                        <li class="hidden">Art, Logo, SVG & illustration</li>
+                        <li class="hidden">PSD Design, Photoshop</li>
                     </ul>
                     <a id="link" href="#" class="text-success">View all my Services</a>
                 </div>
@@ -241,35 +264,35 @@
     
     <section class="five text-center py-5" id="testimonies" style="margin-top: 120px;">
         <div class="projects container">
-            <p class="lead">MY PORTFOLIO</p>
-            <p class="h4 mb-5">Some of My Most Recent Projects</p>
+            <p class="lead hidden">MY PORTFOLIO</p>
+            <p class="h4 mb-5 hidden">Some of My Most Recent Projects</p>
             <div class="row g-3">
                 <div class="col-md-4 col-lg-3 col-sm-12">
-                    <a href="index.html"><img class="img-fluid" src="imgs/swifttalkpage.png" alt=""></a>
+                    <a href="index.html"><img class="img-fluid hiddentwo" src="imgs/swifttalkpage.png" alt=""></a>
                     <p class="lead">SwiftTalk Page</p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-sm-12">
-                    <a href="operaniyi.html"><img class="img-fluid" src="imgs/operaniyipage.png" alt=""></a>
+                    <a href="operaniyi.html"><img class="img-fluid hiddentwo" src="imgs/operaniyipage.png" alt=""></a>
                     <p class="lead">Operniyi Page</p>
                 </div>
-                <div class="col-md-4 col-lg-3 col-sm-12">
-                    <a href="valuemaxpage.html"><img class="img-fluid" src="imgs/valuemaxpage.png" alt=""></a>
+                <div class="col-md-4 col-lg-3 col-sm-12 ">
+                    <a href="valuemaxpage.html"><img class="img-fluid hiddentwo" src="imgs/valuemaxpage.png" alt=""></a>
                     <p class="lead">Valuemax Page</p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-sm-12">
-                    <a href="survivalfundhome.html"><img class="img-fluid" src="imgs/survivalfundhomepage.png" alt=""></a>
+                    <a href="survivalfundhome.html"><img class="img-fluid hiddentwo" src="imgs/survivalfundhomepage.png" alt=""></a>
                     <p class="lead">SurvivalFund page</p>
                 </div>
-                <div class="col-md-4 col-lg-3 col-sm-12">
-                    <a href="simplifiedcredit.html"><img class="img-fluid" src="imgs/simpliefiedcreditpage.png" alt=""></a>
+                <div class="col-md-4 col-lg-3 col-sm-12 ">
+                    <a href="simplifiedcredit.html"><img class="img-fluid hiddentwo" src="imgs/simpliefiedcreditpage.png" alt=""></a>
                     <p class="lead">Simplifiedcredit Page</p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-sm-12">
-                    <a href="necopage.html"><img class="img-fluid" src="imgs/necopage.png" alt=""></a>
+                    <a href="necopage.html"><img class="img-fluid hiddentwo" src="imgs/necopage.png" alt=""></a>
                     <p class="lead">Neco Page</p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-sm-12">
-                    <a href="uber.html"><img class="img-fluid" src="imgs/uberpage.png" alt=""></a>
+                    <a href="uber.html"><img class="img-fluid hiddentwo" src="imgs/uberpage.png" alt=""></a>
                     <p class="lead">Uber Page</p>
                 </div>
             </div>
@@ -277,10 +300,10 @@
     </section>
     <section class="six text-center py-4" id="job">
         <div class="whatido container">
-            <p class="lead">WHAT I DO</p>
-            <p class="h4">How i Can Help Your Next Project</p>
-            <div class="row my-5 gy-5 ">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="lead hidden">WHAT I DO</p>
+            <p class="h4 hidden">How i Can Help Your Next Project</p>
+            <div class="row my-5 gy-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 hidden">
                     <div class="card">
                         <div class="card-body">
                             <span><i class="fas fa-laptop-code fa-4x my-5 text-success"></i></span>
@@ -291,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 hidden">
                     <div class="card">
                         <div class="card-body">
                             <span><i class="fa fa-bullhorn fa-4x my-5 text-success"></i></span>
@@ -302,7 +325,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 hidden">
                     <div class="card">
                         <div class="card-body">
                             <span><i class="fa fa-lightbulb fa-4x my-5 text-success"></i></span>
@@ -324,7 +347,7 @@
                     <p class="lead">Feel Free to Contact Me, Always Available</p>
                 </div>
                 <div class="button">
-                    <button class="btn"><a class="lead" href="#">Reachout</a></button>
+                    <button class="btn"><a class="lead" href="#form">Reachout</a></button>
                 </div>
             </div>
         </div>
@@ -334,11 +357,11 @@
         <div class="row container-fluid justify-content-between align-items-center">
             <div class="col-md-6">
                 <div class="text-dark">
-                    <h1 class="text-dark">
+                    <h1 class="text-dark hiddentwo">
                         If Not Now, When? Let’s Work Together!
                     </h1>
-                    <p class="lead">
-                        I would love to bring all your ideas to reality and increase your business' online presence and visibilty<br>
+                    <p class="lead hidden">
+                        I would love to bring all your ideas to reality and increase your business' online presence and visibilty.<br>
                         I look forward to working with you
 
                     </p>
@@ -346,9 +369,9 @@
             </div>
             <div class="col-md-6 text-end">
                 <form action="https://formsubmit.co/oyedepoayomikun@gmail.com" method="post">
-                    <input type="text" placeholder="Full Name" class="lead" required>
-                    <input type="email" placeholder="Email Address" class="lead" required>
-                    <textarea class="lead" name="message" id="message" cols="30" rows="8" placeholder="Your Message"></textarea>
+                    <input type="text" placeholder="Full Name" class="lead hiddentwo" required>
+                    <input type="email" placeholder="Email Address" class="lead hiddentwo" required>
+                    <textarea class="lead hiddentwo" name="message" id="message" cols="30" rows="8" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn">Contact Me</button>
                 </form>
             </div>
@@ -358,9 +381,10 @@
     <section class="footer py-5 text-center justify-content-between align-content-center">
         <div class="container">
             <div class="firstpart">
-                <h2 class="my-3">
+                <!-- <h2 class="my-3">
                     <span class="text-light">Port<span class="text-success">folio</span></span>
-                </h2>
+                    <img src="imgs/personallogo4copy.png" alt="LOGO" height="50px" width="180px">
+                </h2> -->
                 <p class="lead text-light">Helping you increase your Business' online presence</p>
                 <div class="socials">
                     <a href="https:/api.whatsapp.com/send?phone=2437067536741" target="_blank"><i class="fa-brands fa-whatsapp-square fa-2x text-light mx-1"></i></a>
